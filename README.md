@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="./public/logo192.png" alt="tsps" width="120" height="120">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">⚛️ tsps</h1>
 
-## Available Scripts
+<p align="center">
+  A fresh Create React App starter - React 18 with the default welcome screen and a passing test -<br>
+  set up in October 2022 as the base for a future project.
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#-whats-inside">✨ What's inside</a> •
+  <a href="#-quick-start">🚀 Quick Start</a> •
+  <a href="#-scripts">📦 Scripts</a> •
+  <a href="#-structure">🏗️ Structure</a> •
+  <a href="#-testing">🧪 Testing</a>
+</p>
 
-### `npm start`
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react" alt="React 18">
+  <img src="https://img.shields.io/badge/Create_React_App-5-09D3AC?logo=createreactapp" alt="Create React App 5">
+  <img src="https://img.shields.io/badge/Testing_Library-React_13-E33332?logo=testinglibrary" alt="Testing Library">
+  <img src="https://img.shields.io/badge/Jest-via_CRA-C21325?logo=jest" alt="Jest">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ What's inside
 
-### `npm test`
+The repo is the unmodified Create React App template:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 18** entry point using `ReactDOM.createRoot` and `StrictMode`
+- **Welcome screen** (`src/App.js`) with the spinning React logo
+- **Testing Library** + Jest DOM matchers, with one smoke test for the welcome screen
+- **Web Vitals** hook (`src/reportWebVitals.js`) ready to forward metrics to an analytics endpoint
+- **PWA manifest**, `robots.txt` and favicon/logo assets in `public/`
+- **ESLint** config `react-app` + `react-app/jest` (in `package.json`)
 
-### `npm run build`
+## 🚀 Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The dev server opens `http://localhost:3000` and reloads on every change.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Scripts
 
-### `npm run eject`
+| Script          | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| `npm start`     | Development server with hot reload and lint output            |
+| `npm test`      | Jest in interactive watch mode                                |
+| `npm run build` | Production build into `build/` (minified, hashed filenames)   |
+| `npm run eject` | Copy the CRA configuration into the project (one-way)         |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+public/            # index.html, manifest.json, robots.txt, icons
+src/
+├── App.js         # Welcome screen
+├── App.css
+├── App.test.js    # Renders and checks the "Learn React" link
+├── index.js       # Entry point
+├── index.css
+├── logo.svg
+├── reportWebVitals.js
+└── setupTests.js  # jest-dom matchers
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧪 Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+CI=true npm test -- --watchAll=false
+```
 
-## Learn More
+## 🚀 Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm run build` creates a static bundle in `build/` that can be hosted on any static host (Vercel, Netlify, GitHub Pages, S3, …). See the [CRA deployment guide](https://create-react-app.dev/docs/deployment/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📚 Create React App reference
 
-### Code Splitting
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). See the [CRA documentation](https://create-react-app.dev/) for code splitting, bundle analysis, PWA setup and advanced configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
+No license has been chosen yet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👤 Author
 
-### Making a Progressive Web App
+**Jackson Makinda** - [makindajackson.com](https://makindajackson.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 📧 Email: me@makindajackson.com
+- 💼 LinkedIn: [Jackson Makinda](https://linkedin.com/in/makindajack)
+- 🎨 Dribbble: [@makindajack](https://dribbble.com/makindajack)
+- 🐦 Twitter: [@makindajack](https://twitter.com/makindajack)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with ❤️ in Dar es Salaam, Tanzania 🇹🇿
